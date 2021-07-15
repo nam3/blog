@@ -1,0 +1,27 @@
+{
+  "name": "nam3-blog",
+  "version": "0.0.1",
+  "private": true,
+  "description": "nam3 blog",
+  "author": "nam3",
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nam3/blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nam3/blog/issues"
+  },
+  "homepage": "https://github.com/nam3/blog#readme",
+  "dependencies": {
+    "gatsby": "^3.9.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
