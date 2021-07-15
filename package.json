@@ -1,0 +1,22 @@
+{
+  "name": "nam3-blog",
+  "version": "0.0.1",
+  "description": "nam3 blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nam3/blog.git"
+  },
+  "author": "nam3",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nam3/blog/issues"
+  },
+  "homepage": "https://github.com/nam3/blog#readme",
+  "devDependencies": {
+    "gatsby-cli": "^3.9.0"
+  }
+}
