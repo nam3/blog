@@ -1,22 +1,27 @@
 {
   "name": "nam3-blog",
   "version": "0.0.1",
+  "private": true,
   "description": "nam3 blog",
-  "main": "index.js",
+  "author": "nam3",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nam3/blog.git"
   },
-  "author": "nam3",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nam3/blog/issues"
   },
   "homepage": "https://github.com/nam3/blog#readme",
-  "devDependencies": {
-    "gatsby-cli": "^3.9.0"
+  "dependencies": {
+    "gatsby": "^3.9.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }
