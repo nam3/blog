@@ -3,5 +3,7 @@ module.exports = {
     siteUrl: 'https://www.yourdomain.tld',
     title: 'nam3 blog',
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-netlify-cms',
+  ],
 };
