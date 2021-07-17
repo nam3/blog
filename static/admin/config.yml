@@ -6,7 +6,7 @@ public_folder: "/images/from-cms"
 collections:
   - name: "blog"
     label: "blog"
-    foler: "src/contents"
+    folder: "src/contents"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
