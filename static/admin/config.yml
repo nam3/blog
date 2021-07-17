@@ -3,3 +3,36 @@ backend:
   branch: main
 media_folder: "static/images/from-cms"
 public_folder: "/images/from-cms"
+collections:
+  - name: "blog"
+    label: "blog"
+    foler: "src/contents"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {
+        label: layout,
+        name: layout,
+        widget: hidden,
+        default: blog,
+      }
+      - {
+        label: title,
+        name: title,
+        widget: string,
+      }
+      - {
+        label: published-date,
+        name: published-date,
+        widget: datetime,
+      }
+      - {
+        label: thumbnail,
+        name: thumbnail,
+        widget: image,
+      }
+      - {
+        label: body,
+        name: body,
+        widget: markdown,
+      }
