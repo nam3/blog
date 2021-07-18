@@ -1,0 +1,20 @@
+{
+  "folders": [{
+    "path": "."
+  }],
+  "settings": {
+    "prettier.configPath": "~/.prettierrc",
+    "javascript.preferences.quoteStyle": "single",
+    "typescript.preferences.quoteStyle": "single",
+    "[javascript]": {
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "[typescript]": {
+      "editor.tabSize": 2,
+      "editor.formatOnSave": true,
+      "editor.defaultFormatter": "esbenp.prettier-vscode",
+    }
+  }
+}
