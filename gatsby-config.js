@@ -7,5 +7,12 @@ module.exports = {
     'gatsby-plugin-netlify-cms',
     'gatsby-plugin-image',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'contents',
+        path: `${__dirname}/src/contents`,
+      },
+    },
   ],
 };
