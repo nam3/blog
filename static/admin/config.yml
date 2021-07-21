@@ -5,11 +5,11 @@ backend:
 media_folder: "static/images/from-cms"
 public_folder: "/images/from-cms"
 collections:
-  - name: "blog"
-    label: "blog"
+  - name: blog
+    label: "ブログ"
     folder: "src/contents"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{path-alias}}"
     fields:
       - {
         label: layout,
@@ -18,22 +18,28 @@ collections:
         default: blog,
       }
       - {
-        label: title,
+        label: "タイトル",
         name: title,
         widget: string,
       }
       - {
-        label: published-date,
+        label: "URL: https://blog.com/{ここに入るURLです} (英数小文字とハイフンのみ使用可能)",
+        name: path-alias,
+        pattern: ['^([a-z0-9-]{4,})$', "4文字以上の英数小文字とハイフンを入力してください"],
+        widget: string,
+      }
+      - {
+        label: "最終更新日",
         name: published-date,
         widget: datetime,
       }
       - {
-        label: thumbnail,
+        label: "サムネイル画像",
         name: thumbnail,
         widget: image,
       }
       - {
-        label: body,
+        label: "本文",
         name: body,
         widget: markdown,
       }
