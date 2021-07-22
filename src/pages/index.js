@@ -3,7 +3,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx';
 import * as React from 'react';
 import Layout from '../components/layout';
 
-const Blog = ({ data }) => {
+const Index = ({ data }) => {
   return (
     <Layout title="All of Blog Posts">
       <ul>
@@ -36,4 +36,4 @@ export const query = graphql`
   }
 `;
 
-export default Blog;
+export default Index;
