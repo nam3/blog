@@ -1,5 +1,4 @@
 import { graphql } from 'gatsby';
-import { MDXRenderer } from 'gatsby-plugin-mdx';
 import * as React from 'react';
 import Layout from '../components/layout';
 
@@ -12,7 +11,6 @@ const Index = ({ data }) => {
             <article key={v.id}>
               <h2>{v.frontmatter.title}</h2>
               <p>{v.frontmatter.pusblished_data}</p>
-              <MDXRenderer>{v.body}</MDXRenderer>
             </article>
           );
         })}
@@ -26,11 +24,11 @@ export const query = graphql`
     allMdx(sort: { order: DESC, fields: frontmatter___published_date }) {
       nodes {
         frontmatter {
-          title
+          path_alias
           published_date(formatString: "YYYY年MM月DD日")
+          title
         }
         id
-        body
       }
     }
   }
