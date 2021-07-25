@@ -1,4 +1,4 @@
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import * as React from 'react';
 import Layout from '../components/layout';
 
@@ -9,8 +9,10 @@ const Index = ({ data }) => {
         {data.allMdx.nodes.map((v) => {
           return (
             <article key={v.id}>
-              <h2>{v.frontmatter.title}</h2>
-              <p>{v.frontmatter.pusblished_data}</p>
+              <Link to={v.frontmatter.path_alias}>
+                <h2>{v.frontmatter.title}</h2>
+              </Link>
+              <p>最終更新日: {v.frontmatter.published_date}</p>
             </article>
           );
         })}
