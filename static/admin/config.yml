@@ -2,7 +2,7 @@ backend:
   name: github
   repo: nam3/blog
   branch: main
-media_folder: "static/images/from-cms"
+media_folder: "/static/images/from-cms"
 public_folder: "/images/from-cms"
 collections:
   - name: blog
@@ -37,6 +37,7 @@ collections:
         label: "サムネイル画像",
         name: thumbnail,
         widget: image,
+        default: "/images/from-cms/star-man.png",
       }
       - {
         label: "本文",
