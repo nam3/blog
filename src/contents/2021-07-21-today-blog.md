@@ -2,7 +2,7 @@
 layout: blog
 title: 今日のブログだよ
 path-alias: today-blog
-published-date: 2021-07-21T18:08:03.334Z
+published-date: 2021-07-27T11:29:53.129Z
 thumbnail: /images/from-cms/mr-saturn.png
 ---
 ## Today
