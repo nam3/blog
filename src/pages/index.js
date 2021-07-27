@@ -1,6 +1,7 @@
 import { Link, graphql } from 'gatsby';
 import * as React from 'react';
 import Layout from '../components/layout';
+import { Thumbnail } from '../components/thumbnail';
 
 const Index = ({ data }) => {
   return (
@@ -11,6 +12,10 @@ const Index = ({ data }) => {
             <Link to={v.frontmatter.path_alias}>
               <h2>{v.frontmatter.title}</h2>
             </Link>
+            <Thumbnail
+              alt={v.frontmatter.title}
+              src={v.frontmatter.thumbnail}
+            />
             <p>最終更新日: {v.frontmatter.published_date}</p>
           </article>
         );
@@ -27,6 +32,7 @@ export const query = graphql`
           path_alias
           published_date(formatString: "YYYY年MM月DD日")
           title
+          thumbnail
         }
         id
       }
