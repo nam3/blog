@@ -37,7 +37,7 @@ collections:
         label: "サムネイル画像",
         name: thumbnail,
         widget: image,
-        default: "/images/from-cms/star-man.png",
+        default: "/images/from-cms/mr-saturn.png",
       }
       - {
         label: "本文",
