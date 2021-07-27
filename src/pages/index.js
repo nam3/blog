@@ -12,7 +12,10 @@ const Index = ({ data }) => {
             <Link to={v.frontmatter.path_alias}>
               <h2>{v.frontmatter.title}</h2>
             </Link>
-            <Thumbnail src={v.frontmatter.thumbnail} />
+            <Thumbnail
+              alt={v.frontmatter.title}
+              src={v.frontmatter.thumbnail}
+            />
             <p>最終更新日: {v.frontmatter.published_date}</p>
           </article>
         );
