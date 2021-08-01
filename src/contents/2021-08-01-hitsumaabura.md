@@ -1,7 +1,7 @@
 ---
 layout: blog
 title: 髪の毛も守れて、まつ毛も生えて、肌荒れも治るんやと？ひまし油買ってみた
-path-alias: hitsumaabura
+path-alias: himashiabura
 published-date: 2021-08-01T14:05:43.134Z
 thumbnail: /images/from-cms/download.jpg
 ---
