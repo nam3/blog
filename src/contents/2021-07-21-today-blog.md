@@ -8,3 +8,7 @@ thumbnail: /images/from-cms/mr-saturn.png
 ## Today
 
 I decided not use Rich Text Editor...
+
+
+
+![](/images/from-cms/img_1186.jpg)
