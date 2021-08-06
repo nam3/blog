@@ -1,3 +1,4 @@
+locale: "ja"
 backend:
   name: github
   repo: nam3/blog
