@@ -84,7 +84,7 @@ gcloud functions deploy --source ./
 
 ってrepositoryの場所をカレントディレクトリにしたあと、vendorではなく go.mod で依存関係を解決してあげると、あら不思議！デプロイできちゃう。
 https://github.com/GoogleCloudPlatform/golang-samples/issues/743#issuecomment-458574149 このgithubのコメントにはgo.modがある場所がrootになるし、1階層上のディレクトリを含めようとしてもgo.modのある場所になるからそれはできない。そういうときはvendorを使えとしか書いてない。。。
-`--source ./` を使おうぜっていうTips。コレでgo.modだけにできるのはビルド時間短縮も含めてかなりうれC.
+`--source ./` を使おうぜっていうTips。コレでgo.modだけにできるのはかなりうれC.
 
 ## ファイルシステムへのアクセス
 
